@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_ps"
+        android:onClick="onClickBehave"
+        tools:ignore="UsingOnClickInXml">
+
+        <TextView
+            android:id="@+id/time_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="65sp"
+            android:textStyle="italic"
+            android:textColor="@color/yellow_ps"
+            android:text=""/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/reset_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/green_ps"
+            android:clickable="true"
+            android:onClick="onClickReset"
+            app:srcCompat="@android:drawable/ic_popup_sync" />
+
+        <TextView
+            android:id="@+id/info_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info"
+            android:textColor="@color/green_ps"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:rotation="-35"/>
+
+        <TextView
+            android:id="@+id/button_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/reset_view"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/reset_view"
+            android:layout_marginBottom="-40dp"
+            android:paddingRight="10dp"
+            android:text="@string/reset"
+            android:textColor="@color/green_ps"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="redcc">#cc0000</color>
+    <color name="redb3">#b30000</color>
+    <color name="blue99ff">#0099ff</color>
+    <color name="blue7acc">#007acc</color>
+    <color name="blue_ps">#2e6db4</color>
+    <color name="yellow_ps">#f3c300</color>
+    <color name="red_ps">#df0024</color>
+    <color name="green_ps">#00ac9f</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
