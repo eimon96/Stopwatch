@@ -1,7 +1,6 @@
 package com.e.stopwatch;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity
         handler = new Handler();
         vibre = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         timetv = (TextView) findViewById(R.id.time_view);
-        timetv.setText("00:00:00");
+        timetv.setText("00:00.00");
     }
 
     // Start/Pause
@@ -61,7 +60,7 @@ public class MainActivity extends AppCompatActivity
         mils = secs = mins = 0;
         handler.removeCallbacks(runnable);
         running = false;
-        timetv.setText("00:00:00");
+        timetv.setText("00:00.00");
     }
 
     // Create a new thread

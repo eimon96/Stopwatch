@@ -23,7 +23,6 @@
             android:layout_centerVertical="true"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="65sp"
-            android:textStyle="italic"
             android:textColor="@color/yellow_ps"
             android:text=""/>
 
