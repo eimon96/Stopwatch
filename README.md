@@ -1,8 +1,8 @@
 # The Simplest Stopwatch for Android
 
-Made especially for speedcubing, as you can tap anywhere to start/pause the stopwatch
+Made especially for speedcubing, as you can tap anywhere to start/pause the stopwatch.
 
-You can focus on your shuffled rubik's cube now xD.
+You can focus on your shuffled rubik's cube now xD
 
 # Tested on 
 
