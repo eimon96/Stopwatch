@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity
             mins = secs / 60;
             secs = secs % 60;
             mils = (int) (update %  100);
+            mins = mins % 60;
 
             String time = String.format("%02d:%02d.%02d", mins, secs, mils);
             timetv.setText(time);
