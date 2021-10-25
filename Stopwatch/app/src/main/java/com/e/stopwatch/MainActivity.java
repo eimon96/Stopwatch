@@ -1,9 +1,12 @@
 package com.e.stopwatch;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
+import android.os.Vibrator;
 import android.view.View;
 import android.widget.TextView;
 
@@ -16,6 +19,7 @@ public class MainActivity extends AppCompatActivity
     private boolean running = false;
     Handler handler;
     TextView timetv;
+    Vibrator vibre;
 
     // Constructor
     @Override
@@ -25,6 +29,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         handler = new Handler();
+        vibre = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         timetv = (TextView) findViewById(R.id.time_view);
         timetv.setText("00:00:00");
     }
@@ -37,12 +42,14 @@ public class MainActivity extends AppCompatActivity
             start = SystemClock.uptimeMillis();
             handler.post(runnable);
             running = true;
+            vibre.vibrate(500);
         }
         else
         {
             buff += milli;
             handler.removeCallbacks(runnable);
             running = false;
+            vibre.vibrate(250);
         }
     }
 
@@ -52,7 +59,6 @@ public class MainActivity extends AppCompatActivity
 
         milli = start = buff = update = 0;
         mils = secs = mins = 0;
-        buff += milli;
         handler.removeCallbacks(runnable);
         running = false;
         timetv.setText("00:00:00");
