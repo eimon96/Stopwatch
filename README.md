@@ -1,3 +1,20 @@
+# The Simplest Stopwatch for Android
+
+Made especially for speedcubing, as you can tap anywhere to start/pause the stopwatch
+
+You can focus on your shuffled rubik's cube now xD.
+
+# Tested on 
+
+SAMSUNG GALAXY J6 (SM-J600FN 10 API 29)
+
+ALCATEL 1S (TCL 5024D_EEA 9.0 API 28)
+
+
 # PRIVACY POLICY
 
-This app does not collect any data. It's a simple stopwatch application which everyone can use for free.
+This app does not collect any data. It's a simple open-source stopwatch application which everyone can use for free.
+
+--------------------------------------------------------------------------------------------------------
+
+![](https://i.imgur.com/Zt5yBid.jpg)
