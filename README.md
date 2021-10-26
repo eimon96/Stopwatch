@@ -17,4 +17,4 @@ This app does not collect any data. It's a simple open-source stopwatch applicat
 
 --------------------------------------------------------------------------------------------------------
 
-![](https://i.imgur.com/Zt5yBid.jpg)
+<img src="https://i.imgur.com/Zt5yBid.jpg" width="360" height="740"> <img src="https://i.imgur.com/vIfbHUq.jpg" width="360" height="740">
