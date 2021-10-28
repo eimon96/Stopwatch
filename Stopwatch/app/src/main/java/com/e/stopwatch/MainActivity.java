@@ -83,4 +83,11 @@ public class MainActivity extends AppCompatActivity
             handler.post(this);
         }
     };
+
+    @Override
+    protected void onPause()
+    {
+        super.onPause();
+        onClickBehave(null);
+    }
 }
