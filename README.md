@@ -4,8 +4,6 @@ Made especially for speedcubing, as you can tap anywhere to start/pause the stop
 
 You can focus on your shuffled rubik's cube now xD
 
-Don't turn off your screen, app may malfunction.
-
 # Tested on 
 
 SAMSUNG GALAXY J6 (SM-J600FN 10 API 29)
