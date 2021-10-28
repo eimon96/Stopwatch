@@ -88,6 +88,10 @@ public class MainActivity extends AppCompatActivity
     protected void onPause()
     {
         super.onPause();
-        onClickBehave(null);
+
+        if (running)
+        {
+            onClickBehave(null);
+        }
     }
 }
